@@ -1,0 +1,22 @@
+c 1. Chris and Dolly were discussing about their monthly bills to be paid in the due time and identified 
+that they are pending in paying the electrical bill and Dolly asks for the electrical bill details. Here 
+are the details given by Chris for the payment of bill. Generate electricity bill based on numbers of units 
+consumed
+
+• if units are <50 then rate per unit is 2RS.
+• Units are >= 51 and <= 100 then rate per unit is 3RS.
+• units are>= 101 and <= 300 then rate per unit is 5 Rs and add extra 100Rs to the total bill.
+• units are >=301 and <= 450 then rate per unit is 6RS and add extra 200 RS to the total bill
+• units are >450 then per unit is 8RS and add extra 250 RS to the total bill.
+Now your task is to identify the units utilized and the amount to be pay.
+
+
+2. The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each 
+number is the sum of the two preceding ones, starting from 0 and 1. That is, F (0) = 0, F (1) = 1 F(n) =
+ F (n - 1) + F (n - 2), for n > 1. Given n, calculate F(n). Now your task to print the Fibonacci series number’s 
+up to n number.
+
+
+3. Given a number N, check if a number is perfect or not. A number is said to be perfect if sum of all its factors 
+excluding the number itself is equal to the number. Now your task to check whether the given number is Perfect 
+number or not

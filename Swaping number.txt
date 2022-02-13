@@ -1,0 +1,21 @@
+package input;
+import java.util.Scanner;
+public class swapNumber {
+	public static void main(String[] args) {
+		int x,y,temp;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the Number");
+		x = sc.nextInt();
+		y = sc.nextInt();
+		System.out.println("before swaping number " +x +" " +y);
+		
+		//after swap number
+		temp = x;
+		x=y;
+		y=temp;
+		System.out.println("after swaping number " +x +" " +y);
+	}
+}
+
+

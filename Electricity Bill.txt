@@ -1,0 +1,49 @@
+1. Chris and Dolly were discussing about their monthlybills to be paid in the due time and identified that they arepending in paying the electrical bill and Dolly asks for
+the electrical bill details. Here are the details given byChris for the payment of bill. Generate electricity bill
+based on numbers of units consumed
+• if units are <50 then rate per unit is 2RS.
+• Units are >= 51 and <= 100 then rate per unit is 3RS.
+• units are>= 101 and <= 300 then rate per unit is 5 Rs
+and add extra 100Rs to the total bill.
+• units are >=301 and <= 450 then rate per unit is 6RS
+and add extra 200 RS to the total bill
+• units are >450 then per unit is 8RS and add extra 250
+RS to the total bill.
+Now your task is to identify the units utilized and the
+amount to be pay.
+
+
+
+package ElectricityBill;
+import java.util.Scanner;
+public class ebill {
+	public static int calculateBill(int units) {
+		if(units<=50) {
+			return units*2;
+		}
+		else if(units>50 && units<=100) {
+			return  (50*2)+(units-50)*3;
+		}
+		else if(units>100 && units<=300) {
+			return ((50*2) + (50*3)) + ((units-100)*5+100);
+		}
+		else if(units>300 && units<=450) {
+			return ((50*2)+(50*3) + (200*5 +100)) + ((units-300)*6+200);
+		}
+		else if(units>450) {
+			return ((50*2) + (50*3) + (200*5 + 100) + (150*6+200)) + ((units-450)*8 +250);
+		}
+		else {
+			return 0;
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Electricity units");
+		int units= sc.nextInt();
+		System.out.println(calculateBill(units));
+		
+	}
+}

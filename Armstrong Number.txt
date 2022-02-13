@@ -1,0 +1,22 @@
+package xyz;
+import java.util.Scanner;
+public class abc {
+	public static void main(String[] args) {
+		Scanner a = new Scanner(System.in);
+		System.out.println("Enter a Number");
+		int num = a.nextInt();
+		int i=0, temp=num, arm=0,rem ;
+		
+		while(num>0) {
+			rem=num%10;
+			num=num/10;
+			arm = arm +(rem*rem*rem);
+		}
+		if(temp==arm) {
+			System.out.println("This is an Armstrong Number");
+		}
+		else{
+			System.out.println("Not an Armstrong Number");
+		}
+	}
+}
